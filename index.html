@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-left">
+      <div class="img-group1">
+        <div class="card-left-1">
+          <img src = "/images/illustration-woman-online-desktop.svg" alt=""/>
+        </div>
+        <div class="card-left-2">
+          <img src = "/images/bg-pattern-mobile.svg" alt=""/>
+        </div>
+        <div class="card-left-3">
+          <img src = "/images/illustration-box-desktop.svg" alt=""/>
+        </div>
+      </div>
+      <div class="img-group2">
+        <div class="card-left-1-group2">
+          <img src = "/images/illustration-woman-online-mobile.svg" alt=""/>
+        </div>
+        <div class="card-left-2-group2">
+          <img src = "/images/bg-pattern-mobile.svg" alt=""/>
+        </div>
+      </div>
+    </div>
+    <div class="card-right">
+      <h1>FAQ</h1>
+      <div class="head-right">
+        <div class="block-1">
+
+          <a href="javascript:toggle('1');"><h2 id="bold_1">How many team members can I invite?</h2><img src="/images/icon-arrow-down.svg" alt="" id="rotate_1"></a>
+        </div>
+          <div class="box-2" id="toggle_1" style="display: none">
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+            </p>
+          </div>
+      </div>
+      <div class="line-grey"></div>
+      <div class="head-right">
+        <div class="block-1">
+          <a href="javascript:toggle('2');"><h2 id="bold_2">What is the maximum file upload size?</h2><img src="/images/icon-arrow-down.svg" alt="" id="rotate_2"></a>
+        </div>
+          <div class="box-2" id="toggle_2" style="display: none">
+            <p>
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+      </div>
+      <div class="line-grey"></div>
+      <div class="head-right">
+        <div class="block-1">
+          <a href="javascript:toggle('3');"><h2 id="bold_3">How do I reset my password?</h2><img src="/images/icon-arrow-down.svg" alt="" id="rotate_3"></a>
+        </div>
+          <div class="box-2" id="toggle_3" style="display: none">
+            <p>
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+            </p>
+          </div>
+      </div>
+      <div class="line-grey"></div>
+      <div class="head-right">
+        <div class="block-1">
+          <a href="javascript:toggle('4');"><h2 id="bold_4">Can I cancel my subscription?</h2><img src="/images/icon-arrow-down.svg" alt="" id="rotate_4"></a>
+        </div>
+          <div class="box-2" id="toggle_4" style="display: none">
+            <p>
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </div>
+      </div>
+      <div class="line-grey"></div>
+      <div class="head-right">
+        <div class="block-1">
+          <a href="javascript:toggle('5');"><h2 id="bold_5">Do you provide additional support?</h2><img src="/images/icon-arrow-down.svg" alt="" id="rotate_5"></a>
+        </div>
+          <div class="box-2" id="toggle_5" style="display: none">
+            <p>
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
+      </div>
+      <div class="line-grey"></div>
+
+      <!-- <details>
+        <summary>How many team members can I invite?</summary>
+        <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</p>
+      </details>
+      <details>
+        <summary>What is the maximum file upload size?</summary>
+        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </details>
+      <details>
+        <summary>How do I reset my password?</summary>
+        <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </details>
+      <details>
+        <summary>Can I cancel my subscription?</summary>
+        <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </details>
+      <details>
+        <summary>Do you provide additional support?</summary>
+        <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </details> -->
+    </div>
+  </div>
+
+  <!-- How many team members can I invite?
+  You can invite up to 2 additional users on the Free plan. There is no limit on 
+  team members for the Premium plan.
+
+  What is the maximum file upload size?
+  No more than 2GB. All files in your account must fit your allotted storage space.
+
+  How do I reset my password?
+  Click “Forgot password” from the login page or “Change password” from your profile page.
+  A reset link will be emailed to you.
+
+  Can I cancel my subscription?
+  Yes! Send us a message and we’ll process your request no questions asked.
+
+  Do you provide additional support?
+  Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
+
+<script>
+  function toggle(id) {
+  a = document.getElementById('toggle_'+id);
+  b = document.getElementById('bold_'+id);
+  e = document.getElementById('rotate_'+id);
+    if (a.style.display=='block') {
+      a.style.display='none';
+      b.style.fontWeight='normal';
+      e.style.transform='rotate(0deg)';
+    }
+    else {
+      a.style.display='block';
+      b.style.fontWeight='bold';
+      e.style.transform='rotate(180deg)';
+      // b.innerHTML='Hide Discussion';
+  }
+}
+</script>

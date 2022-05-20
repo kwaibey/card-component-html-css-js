@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+body {
+    background: radial-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+.card {
+    width: 65%;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+@media only screen and (max-width: 960px){
+    .card{
+        width: 375px;
+        flex-direction: column;
+        height: auto;
+        padding-top: 0rem;
+    }
+
+    .card-left {
+        width: 20% !important;
+    }
+
+    .card-left .img-group1 img{
+        display: none;
+    }
+
+    .card h1{
+        margin-left: 40px;
+    }
+
+    .card-right > .head-right > .block-1{
+        text-decoration: none;
+        display: flex;
+        margin-left: -100px;
+    }
+    .card-right > .head-right > .box-2 p{
+        margin-left: -100px;
+        width: 260px !important;
+        margin-top: 0rem !important;
+    }
+    .card-right .line-grey {
+        width: 330px !important;
+        margin-left: -100px;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        margin-bottom: 1rem;
+    }
+}
+
+.card h1{
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.card-left {
+    width: 50%;
+}
+
+.img-group1 .card-left-1  img{
+    width: 450px;
+    height: 350px;
+    margin-left: -75px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-group1 .card-left-2  img{
+    width: 450px;
+    margin-left: -65px;
+    margin-top: -115px;
+    position: absolute;
+}
+
+.img-group1.img-group1 .card-left-3  img{
+    margin-left: -90px;
+    margin-top: -225px;
+    position: absolute;
+    z-index: 2;
+}
+
+.card-right {
+    width: 60%;
+    margin-left: 120px;
+}
+
+.card-right .line-grey{
+    width: 80%;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-bottom: 1rem;
+}
+
+.card-right > .head-right {
+    margin-bottom: 1rem;
+}
+
+.card-right > .head-right > .block-1 a {
+    text-decoration: none;
+    display: flex;
+}
+
+.card-right > .head-right > .block-1 a >img {
+    width: 12px;
+    height: 10px;
+}
+
+.card-right > .head-right > .block-1 a > h2{
+    font-size: 14px;
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 1rem;
+    width: 320px;
+    font-weight: normal;
+}
+
+.card-right > .head-right > .block-1 a > h2:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+
+.card-right > .head-right > .box-2 p{
+    font-size: 12px;
+    text-decoration: none;
+    color: hsl(240, 6%, 50%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 80%;
+}
+
+
+
+@media only screen and (min-width: 960px){
+   
+
+    .card-left .img-group2 img{
+        display: none;
+    }
+    
+
+}
+
+
+.card-left .img-group2 .card-left-1-group2{
+    margin-bottom: 70px;
+    width: 280px;
+    height: auto;
+    margin-left: 40px;
+    position: relative;
+}
+
+.card-left .img-group2 .card-left-2-group2 img{
+    position: absolute;
+    margin: -150px;
+    width: 260px;
+    margin-left: 55px;
+}
+
+
